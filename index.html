@@ -4,47 +4,85 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+
 <html>
 	<head>
-		<title>Eventually by HTML5 UP</title>
+		<title>Mace Lee</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+
 	</head>
 	<body>
 
 		<!-- Header -->
 			<header id="header">
-				<h1>Eventually</h1>
-				<p>A simple template for telling the world when you'll launch<br />
-				your next big thing. Brought to you by <a href="http://html5up.net">HTML5 UP</a>.</p>
-			</header>
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-md-6 text-center">
+							<img src="./images/final album art.jpg" style="max-width: 250px; padding: 5px;"/>
+							<img src="./images/final album credits.jpg" style="max-width: 250px; padding: 5px"/>
+						</div>
+						<div class="col-md-6">
+							<div class="align-middle">
+								<h1 class="text-center"></h1>
+									<div class="row">
+										<div class="text-center" style="padding:0;">
+											<div style="width: 50%; display:inline">
+												<img class="label" src="./images/spotify.png" height="40px" width="100px"/>
+												<img class="label" src="./images/soundcloud.png" height="40px" width="100px"/>
+											</div>
+											<div style="width: 50%; display:inline">
+												<img class="label" src="./images/apple music.png" height="40px" width="100px"/>
+												<img class="label" src="./images/itunes.png" height="40px" width="100px"/>
+											</div>
+										</div>
+									</div>
 
-		<!-- Signup Form -->
-			<form id="signup-form" method="post" action="#">
-				<input type="email" name="email" id="email" placeholder="Email Address" />
-				<input type="submit" value="Sign Up" />
-			</form>
+								</div>
+								<!-- Signup Form -->
+								<form id="signup-form">
+									<input type="email" name="email" id="email" placeholder="Email Address" />
+									<label for="signup-form"></label>
+									<input type="submit" value="Sign Up" />
 
-		<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; Untitled.</li><li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</footer>
+								</form>
+							</div>
+						</div>
+					</div>
+					<!-- Footer -->
+					<div class="row align-items-center">
+						<div class="col-md-3"></div>
+						<div class="col-md-6 text-center">
+							<footer id="footer">
+								<ul class="icons">
+									<li><a href="http://twitter.com/512mace" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="http://instagram.com/512mace" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="http://facebook.com/512mace" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="mailto:512mace@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+								</ul>
+								<ul class="copyright">
+									<li>&copy; Mace Lee.</li><li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
+								</ul>
+							</footer>
+						</div>
+					</div>
+				</div>
+			</header
+
+
 
 		<!-- Scripts -->
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script src="assets/js/jquery.ajaxChimp.js"></script>
+			<script> $('#signup-form').ajaxChimp({url: 'https://macelee.us18.list-manage.com/subscribe/post?u=45e1ed05ac48b6a901aadbf01&amp;id=ea7628b7a2', callback: function(resp) {console.log(resp); console.log('meh')}});</script>
 
 	</body>
 </html>
